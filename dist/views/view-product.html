@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product.name }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h1">{{ product.name }}</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <section class="mt-4" id="product">
+            {% if product %}
+            {% if product.description and product.price and product.createdDate %}
+            <h2 class="h2 mt-3 mb-3">Description</h2>
+            {{ product.description }}
+
+            <h2 class="h2 mt-3 mb-3">Price</h2>
+            {{ product.price }}
+
+            <h2 class="h2 mt-3 mb-3">Created</h2>
+            {{ product.createdDate}}
+            {% endif %}
+            {% endif %}
+        </section>
+        <section class="mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <button class="btn btn-primary">
+                            <a href="/products" class="text-light">Back</a>
+                        </button>
+                    </div>
+                    <div class="col-md-10"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

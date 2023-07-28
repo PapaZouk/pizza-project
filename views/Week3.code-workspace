@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Academy/Week3"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../library"
+		},
+		{
+			"path": "../../../../IdeaProjects/Soniak-Bew-Project/soniak-bew-project/Frontend/soniak-bew-front"
+		},
+		{
+			"path": "../../../../IdeaProjects/Soniak-Bew-fork/soniak-bew-project/Frontend/soniak-bew-front"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html-css"
+	}
+}

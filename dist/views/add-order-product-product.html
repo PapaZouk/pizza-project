@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Order Product Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h1">Add Product</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <section class="bg-light py-5" id="form">
+            <div class="container">
+                <p>Choose Product:</p>
+                <form action="/add-order-product-product" method="post">
+                    <div class="form-group">
+                        <label for="products">Select product name:
+                            <select name="productId" id="productId">
+                                {% for product in products %}
+                                <option value="{{ product.productId }}" selected>
+                                    {{ product.name }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </label>
+                    </div>
+                    <button class="btn btn-primary mt-3" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

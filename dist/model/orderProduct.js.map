@@ -1,0 +1,1 @@
+{"version":3,"file":"orderProduct.js","sourceRoot":"","sources":["../../model/orderProduct.ts"],"names":[],"mappings":";;;AAAA;IAKI,sBAAY,OAAe,EAAE,SAAiB,EAAE,QAAgB;QAC5D,IAAI,CAAC,OAAO,GAAG,OAAO,CAAC;QACvB,IAAI,CAAC,SAAS,GAAG,SAAS,CAAC;QAC3B,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;IAC7B,CAAC;IACL,mBAAC;AAAD,CAAC,AAVD,IAUC;AAVY,oCAAY"}
